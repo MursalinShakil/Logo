@@ -1,0 +1,1777 @@
+/* =================================================================         Normalize CSS  Start       =================================================================*/
+
+
+/*!
+ * Bootstrap Reboot v5.0.2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+ 
+ @media (prefers-reduced-motion: no-preference) {
+   :root {
+     scroll-behavior: smooth;
+   }
+ }
+ 
+ body {
+   margin: 0;
+   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   background-color: #fff;
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
+ 
+ hr {
+   margin: 1rem 0;
+   color: inherit;
+   background-color: currentColor;
+   border: 0;
+   opacity: 0.25;
+ }
+ 
+ hr:not([size]) {
+   height: 1px;
+ }
+ 
+ h6, h5, h4, h3, h2, h1 {
+   margin-top: 0;
+   margin-bottom: 0.5rem;
+   font-weight: 500;
+   line-height: 1.2;
+ }
+ 
+ h1 {
+   font-size: calc(1.375rem + 1.5vw);
+ }
+ @media (min-width: 1200px) {
+   h1 {
+     font-size: 2.5rem;
+   }
+ }
+ 
+ h2 {
+   font-size: calc(1.325rem + 0.9vw);
+ }
+ @media (min-width: 1200px) {
+   h2 {
+     font-size: 2rem;
+   }
+ }
+ 
+ h3 {
+   font-size: calc(1.3rem + 0.6vw);
+ }
+ @media (min-width: 1200px) {
+   h3 {
+     font-size: 1.75rem;
+   }
+ }
+ 
+ h4 {
+   font-size: calc(1.275rem + 0.3vw);
+ }
+ @media (min-width: 1200px) {
+   h4 {
+     font-size: 1.5rem;
+   }
+ }
+ 
+ h5 {
+   font-size: 1.25rem;
+ }
+ 
+ h6 {
+   font-size: 1rem;
+ }
+ 
+ p {
+   margin-top: 0;
+   margin-bottom: 1rem;
+ }
+ 
+ abbr[title],
+ abbr[data-bs-original-title] {
+   -webkit-text-decoration: underline dotted;
+   text-decoration: underline dotted;
+   cursor: help;
+   -webkit-text-decoration-skip-ink: none;
+   text-decoration-skip-ink: none;
+ }
+ 
+ address {
+   margin-bottom: 1rem;
+   font-style: normal;
+   line-height: inherit;
+ }
+ 
+ ol,
+ ul {
+   padding-left: 2rem;
+ }
+ 
+ ol,
+ ul,
+ dl {
+   margin-top: 0;
+   margin-bottom: 1rem;
+ }
+ 
+ ol ol,
+ ul ul,
+ ol ul,
+ ul ol {
+   margin-bottom: 0;
+ }
+ 
+ dt {
+   font-weight: 700;
+ }
+ 
+ dd {
+   margin-bottom: 0.5rem;
+   margin-left: 0;
+ }
+ 
+ blockquote {
+   margin: 0 0 1rem;
+ }
+ 
+ b,
+ strong {
+   font-weight: bolder;
+ }
+ 
+ small {
+   font-size: 0.875em;
+ }
+ 
+ mark {
+   padding: 0.2em;
+   background-color: #fcf8e3;
+ }
+ 
+ sub,
+ sup {
+   position: relative;
+   font-size: 0.75em;
+   line-height: 0;
+   vertical-align: baseline;
+ }
+ 
+ sub {
+   bottom: -0.25em;
+ }
+ 
+ sup {
+   top: -0.5em;
+ }
+ 
+ a {
+   color: #0d6efd;
+   text-decoration: underline;
+ }
+ a:hover {
+   color: #0a58ca;
+ }
+ 
+ a:not([href]):not([class]), a:not([href]):not([class]):hover {
+   color: inherit;
+   text-decoration: none;
+ }
+ 
+ pre,
+ code,
+ kbd,
+ samp {
+   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+   font-size: 1em;
+   direction: ltr /* rtl:ignore */;
+   unicode-bidi: bidi-override;
+ }
+ 
+ pre {
+   display: block;
+   margin-top: 0;
+   margin-bottom: 1rem;
+   overflow: auto;
+   font-size: 0.875em;
+ }
+ pre code {
+   font-size: inherit;
+   color: inherit;
+   word-break: normal;
+ }
+ 
+ code {
+   font-size: 0.875em;
+   color: #d63384;
+   word-wrap: break-word;
+ }
+ a > code {
+   color: inherit;
+ }
+ 
+ kbd {
+   padding: 0.2rem 0.4rem;
+   font-size: 0.875em;
+   color: #fff;
+   background-color: #212529;
+   border-radius: 0.2rem;
+ }
+ kbd kbd {
+   padding: 0;
+   font-size: 1em;
+   font-weight: 700;
+ }
+ 
+ figure {
+   margin: 0 0 1rem;
+ }
+ 
+ img,
+ svg {
+   vertical-align: middle;
+ }
+ 
+ table {
+   caption-side: bottom;
+   border-collapse: collapse;
+ }
+ 
+ caption {
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   color: #6c757d;
+   text-align: left;
+ }
+ 
+ th {
+   text-align: inherit;
+   text-align: -webkit-match-parent;
+ }
+ 
+ thead,
+ tbody,
+ tfoot,
+ tr,
+ td,
+ th {
+   border-color: inherit;
+   border-style: solid;
+   border-width: 0;
+ }
+ 
+ label {
+   display: inline-block;
+ }
+ 
+ button {
+   border-radius: 0;
+ }
+ 
+ button:focus:not(:focus-visible) {
+   outline: 0;
+ }
+ 
+ input,
+ button,
+ select,
+ optgroup,
+ textarea {
+   margin: 0;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+ }
+ 
+ button,
+ select {
+   text-transform: none;
+ }
+ 
+ [role=button] {
+   cursor: pointer;
+ }
+ 
+ select {
+   word-wrap: normal;
+ }
+ select:disabled {
+   opacity: 1;
+ }
+ 
+ [list]::-webkit-calendar-picker-indicator {
+   display: none;
+ }
+ 
+ button,
+ [type=button],
+ [type=reset],
+ [type=submit] {
+   -webkit-appearance: button;
+ }
+ button:not(:disabled),
+ [type=button]:not(:disabled),
+ [type=reset]:not(:disabled),
+ [type=submit]:not(:disabled) {
+   cursor: pointer;
+ }
+ 
+ ::-moz-focus-inner {
+   padding: 0;
+   border-style: none;
+ }
+ 
+ textarea {
+   resize: vertical;
+ }
+ 
+ fieldset {
+   min-width: 0;
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+ 
+ legend {
+   float: left;
+   width: 100%;
+   padding: 0;
+   margin-bottom: 0.5rem;
+   font-size: calc(1.275rem + 0.3vw);
+   line-height: inherit;
+ }
+ @media (min-width: 1200px) {
+   legend {
+     font-size: 1.5rem;
+   }
+ }
+ legend + * {
+   clear: left;
+ }
+ 
+ ::-webkit-datetime-edit-fields-wrapper,
+ ::-webkit-datetime-edit-text,
+ ::-webkit-datetime-edit-minute,
+ ::-webkit-datetime-edit-hour-field,
+ ::-webkit-datetime-edit-day-field,
+ ::-webkit-datetime-edit-month-field,
+ ::-webkit-datetime-edit-year-field {
+   padding: 0;
+ }
+ 
+ ::-webkit-inner-spin-button {
+   height: auto;
+ }
+ 
+ [type=search] {
+   outline-offset: -2px;
+   -webkit-appearance: textfield;
+ }
+ 
+ /* rtl:raw:
+ [type="tel"],
+ [type="url"],
+ [type="email"],
+ [type="number"] {
+   direction: ltr;
+ }
+ */
+ ::-webkit-search-decoration {
+   -webkit-appearance: none;
+ }
+ 
+ ::-webkit-color-swatch-wrapper {
+   padding: 0;
+ }
+ 
+ ::file-selector-button {
+   font: inherit;
+ }
+ 
+ ::-webkit-file-upload-button {
+   font: inherit;
+   -webkit-appearance: button;
+ }
+ 
+ output {
+   display: inline-block;
+ }
+ 
+ iframe {
+   border: 0;
+ }
+ 
+ summary {
+   display: list-item;
+   cursor: pointer;
+ }
+ 
+ progress {
+   vertical-align: baseline;
+ }
+ 
+ [hidden] {
+   display: none !important;
+ }
+ 
+
+ /*# sourceMappingURL=bootstrap-reboot.css.map */
+/* ==================================================================         Normalize CSS End          ==========================================================*/
+
+
+
+
+
+
+/* ==================================================================   Common Design Start   ============================================================= */
+.text {
+    width: 1920px;
+    margin: 155px auto;
+  }
+  
+  body{
+    font-family: "Urbanist", sans-serif;
+    font-size: 17px;
+    color: #60697B;
+    background-color: #FEFEFE;
+    
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color:  #60697B;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #343F52;
+  }
+  
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 38px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 22px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+/*================================================================  Common Design End  ===============================================================*/
+
+
+
+
+
+
+
+
+/*===============================================================   Header Design Start     ================================================================*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1320px;
+    height: 76px;
+    margin: 6px auto 0px;
+}
+
+
+
+
+/* Header Nav Design */
+.header-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    column-gap: 45px;
+  }
+  
+  .header-nav li {
+    list-style: none;
+  }
+  
+  .header-nav a {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #343F52;
+    text-decoration: none;
+  }
+  
+  .header-nav a:hover {
+  color: #FF5331;
+  }
+
+
+
+
+
+
+/* User Nav Design */
+.user-button ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 120px;
+}
+
+.user-button li {
+    list-style: none;
+}
+
+.user-button a {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #000000;
+    text-decoration: none;   
+}
+
+.user-button a:hover {
+    color: #E94339;
+}
+
+/*==========================================================     Header Design End   =====================================================================*/
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section Hero Design Start   =====================================================================*/
+.section-hero .inner-content {
+  width: 1470px;
+  height: 643px;
+  margin: 10px auto 0;
+  display: flex;
+  column-gap: 109px;
+  border-radius: 16px;
+  background-image: linear-gradient(to right, #E4F1FE, #FCD5F5);
+
+}
+
+
+
+/*Block-Left*/ 
+.section-hero .inner-content .block-left .title{
+  width: 552.45px;
+  height: 110px;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 55px;
+  color:  #343F52;
+  margin: 175px 0px 0px 90px;
+}
+
+.section-hero .inner-content .block-left .title span{
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 55px;
+  color: #F857A6;
+}
+
+
+
+.section-hero .inner-content .block-left .discription{
+  width: 464.7px;
+  height: 62.5px;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #60697B;
+  margin: 23px 0px 0px 90px;
+}
+
+
+/* Button */
+.section-hero .inner-content .block-left .explore-btn{
+  width: 152px;
+  height: 58px;
+  font-size: 17px;
+  font-weight: 600px;
+  line-height: 28px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #F857A6;
+  margin: 34px 0px 0px 90px;
+}
+
+
+.section-hero .inner-content .block-left .explore-btn{
+  transition: all 300ms ease-out 0s;
+}
+.section-hero .inner-content .block-left .explore-btn:hover{
+  transform: scale(1.1);
+  background-color: #191720;
+}
+
+
+
+/*Block-Right*/
+.section-hero .block-right {
+  padding: 90px 90px 0px 35px;
+}
+
+.section-hero .block-right .hero-image{
+  width: 610px;
+  height: 622.95px;
+}
+/*==========================================================     Section Hero Design End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section Feature Design Start   =====================================================================*/
+
+.section-feature{
+  width: 1284px;
+  height: 520px;
+  margin: 260px auto 0px;
+}
+
+
+
+
+/*Title*/
+.section-feature .heading .title{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: center;
+  color: #F857A6;
+  margin: 0 auto;
+}
+
+.section-feature .heading .sub-title{
+  width: 582.06px;
+  height: 93.5px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 47.5px;
+  text-align: center;
+  margin: 16.6px auto 0px;
+}
+
+
+
+
+
+/*Feature-List*/
+.section-feature .feature-list{
+  width: 1284px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 36px;
+  flex-wrap: wrap;
+  margin: 46px auto 0px;
+}
+
+
+
+.section-feature .feature-list .feature-list-blocks{
+  width: 400px;
+  height: 90px;
+}
+
+.section-feature .feature-list .feature-list-blocks .feature-list-img {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+}
+
+
+.section-feature .feature-list .feature-list-blocks .title{
+  width: 227.83px;
+  height: 30.8px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30.8px;
+  text-align: left;
+  color: #343F52;
+  display: inline-block;
+  margin: 0px 0px 0px 20px;
+}
+
+
+.section-feature .feature-list .feature-list-blocks .description{
+  width: 339.47px;
+  height: 77.79px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin: 9px 0px 0px 64px;
+}
+/*==========================================================     Section Feature Design End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section Control Design Start   =====================================================================*/
+/*Inner-One*/
+.section-control .inner{
+  width: 1188.75px;
+  height: 611.36px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 116px;
+  margin: 144px auto 0px;
+}
+
+
+/*Block-Left*/
+.section-control .inner .block-left .control-main-image{
+  width: 528px;
+  height: 611px;
+  margin: 0px 0px 0px 0px;
+}
+
+
+
+
+/*Block-Right*/
+.section-control .inner .block-right{
+  width: 544px;
+  height: 432px;
+  margin-top: 90px;
+}
+
+.section-control .inner .block-right .control-heading .title{
+  width: 194.41px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  color: #F857A6;
+}
+
+.section-control .inner .block-right .control-heading .sub-title{
+  width: 519.04px;
+  height: 93.5px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 47.5px;
+  text-align: left;
+  color: #343F52;
+  margin-top: 16.59px;
+}
+
+.section-control .inner .block-right .control-heading .description{
+  width: 521.36px;
+  height: 106.67px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin-top: 25.5px;
+}
+
+
+
+
+.section-control .inner .block-right .control-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 85px;
+  row-gap: 24px;
+  margin-top: 38.89px;
+}
+
+
+.section-control .inner .block-right .control-list .point{
+display: flex;
+column-gap: 10px;
+} 
+
+
+
+.section-control .inner .block-right .control-list .point .point-image{
+  width: 20.2px;
+  height: 20px; 
+  margin-top: 5px;
+}
+
+
+.section-control .inner .block-right .control-list .point .point-text{
+  width: 164.93px;
+  height: 48.89px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin: 1px 0px 0px 0px;
+}
+
+/*==========================================================     Section Control Design End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section Perfect Control Design End   =====================================================================*/ 
+
+/*Inner-two*/
+.section-perfect-control .inner{
+  width: 1329px;
+  height: 590px;
+  display: flex;
+  column-gap: 40px;
+  margin: 160px auto 0px;
+}
+  
+  
+  
+/*Block-Left*/
+.section-perfect-control .inner .block-left{
+  width: 554px;
+  height: 422px;
+  margin-top:84px;
+}
+  
+.section-perfect-control .inner .block-left .control-heading .title{
+  width: 226px.41px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  color: #F857A6;
+}
+  
+.section-perfect-control .inner .block-left .control-heading .sub-title{
+  width: 537px;
+  height: 93.5px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 47.5px;
+  text-align: left;
+  color: #343F52;
+  margin-top: 16px;
+}
+  
+.section-perfect-control .inner .block-left .control-heading .description{
+  width: 510px;
+  height: 106.67px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin-top: 25px;
+}
+  
+  
+  
+  
+.section-perfect-control .inner .block-left .control-list{
+  margin-top: 38px;
+}
+  
+  
+  
+.section-perfect-control .inner .block-left .control-list .point .point-image{
+  width: 20.2px;
+  height: 20px;
+  display: inline-block;
+  
+}
+
+.section-perfect-control .inner .block-left .control-list .point .point-text{
+  width: 317px;
+  height: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  display: inline-block;
+  margin: 0px 0px 15px 10px;
+}
+  
+  
+  
+
+
+
+/*Block-Right*/
+
+.section-perfect-control .inner .block-right{
+  width: 731px;
+  height: 590px;
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+    
+.section-perfect-control .inner .block-right .right-image-one{
+  width: 625px;
+  height: 590px;
+  margin-left: 105px;
+  position: relative;
+}  
+   
+.section-perfect-control .inner .block-right .right-image-two{
+  width: 215px;
+  height: 120px;
+  position: absolute;
+  left: 30px;
+  top: 80px;
+}
+
+.section-perfect-control .inner .block-right .right-image-three{
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  top: 365px;
+  left: 30px;
+}
+  
+/*==========================================================     Section Perfect Control Design End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+/*==========================================================     Section Overview Start   =====================================================================*/
+
+
+/* Title Statistics */
+.overview .overview-summary{
+  width: 1470px;
+  height: 458.19px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -35px;
+  background-image: linear-gradient(to right, #E4F1FE, #FCD5F5);
+  border-radius: 16px;
+}
+
+.overview .overview-summary .title-statistics{
+  display: flex;
+}
+
+.overview .overview-summary .title-statistics .heading{
+  width: 453.33px;
+  height: 178.19px;
+  margin: 90px 0px 0px 90px;
+}
+
+.overview .overview-summary .heading .title{
+  width: 275.2px;
+  height: 93.5px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 47.5px;
+  text-align: left;
+}
+
+.overview .overview-summary .heading .sub-title{
+  width: 295.4px;
+  height: 61.1px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34.1px;
+  text-align: left;
+  margin-top: 19.5px
+}
+
+
+
+
+/* Statistics Part */
+.overview .overview-summary .title-statistics .statistics-cart{
+  width: 288.88px;
+  height: 138.89px;
+  margin: 100px 0px 0px 0px;
+}
+
+.overview .overview-summary .title-statistics .statistics-cart .statistics-cart-image{
+  width: 44px;
+  height: 44px; 
+  margin: 0px 0px 0px 120px;
+}
+
+.overview .overview-summary .title-statistics .statistics-cart .statistics-cart-text{
+  width: 109.23px;
+  height: 41px;
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 41px;
+  text-align: center;
+  margin: 15px auto 0px;
+}
+
+.overview .overview-summary .title-statistics .statistics-cart .statistics-cart-text-details{
+  width: 186.14px;
+  height: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: center;
+  margin: 14px auto 0px;
+}
+
+
+
+/* Employee-list */
+.overview .overview-summary .employee-list{
+  width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin: 64px auto 0px;
+}
+
+.overview .overview-summary .employee-list .list-cart{
+  width: 300px;
+  height: 315.36px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 5px #CFCEEA solid;
+  box-shadow: 0px 5px 35px 0px #1E222812;
+
+}
+
+.overview .overview-summary .employee-list .list-cart .summary{
+  width: 218.54px;
+  height: 144.38px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.6px;
+  text-align: left;
+  margin: 40px 0px 0px 40px; 
+}
+
+.overview .overview-summary .employee-list .list-cart .names{
+  width: 130.71px;
+  height: 28.5px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 28.5px;
+  text-align: left;
+  margin: 20px 0px 0px 40px;
+}
+
+.overview .overview-summary .employee-list .list-cart .designation{
+  width: 153.32px;
+  height: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  margin: 9px 0px 0px 40px;
+}
+
+
+
+
+
+
+.overview .overview-summary .employee-list .list-cart{
+  transition: all 300ms ease-out 0s;
+}
+
+.overview .overview-summary .employee-list .list-cart:hover{
+  transform: scale(1.05);
+}
+
+/*==========================================================     Section Overview End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section case Study Start   =====================================================================*/ 
+.section-case-studies .inner{
+  width: 1290px;
+  height: 540.53px;
+  margin: 350px auto 0px;
+}
+
+
+.section-case-studies .inner .case-studies-heading .title{
+  width: 113.31px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: center;
+  margin: 0 auto;
+  color: #F857A6;
+}
+
+.section-case-studies .inner .case-studies-heading .sub-title{
+  width: 704.72px;
+  height: 93.5px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 47.5px;
+  text-align: center;
+  margin: 16px auto 0px;
+}
+
+
+.section-case-studies .inner .case-studies-list{
+  width: 1290px;
+  height: 359.94px;
+  margin: 46px auto 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-case-studies .inner .case-studies-list .case-studies-blog-cart{
+  width: 410px;
+  height: 359.94px;
+}
+
+
+.section-case-studies .inner .case-studies-list .case-studies-blog-cart .blog-cart-image{
+  width: 410px;
+  height: 256.25px;
+}
+
+
+.section-case-studies .inner .case-studies-list .case-studies-blog-cart .blog-cart-title{
+  width: 269.14px;
+  height: 28px;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 32.2px;
+  text-align: left;
+  margin-top: 32px;
+}
+
+
+.section-case-studies .inner .case-studies-list .case-studies-blog-cart .blog-cart-time{
+  width: 88px;
+  height: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25.5px;
+  text-align: left;
+  color: #AAB0BC;
+  margin-top: 21px;
+  display: inline-block;
+}
+
+
+
+.section-case-studies .inner .case-studies-list .case-studies-blog-cart .blog-cart-work-details{
+  width: 73.98px;
+  height: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25.5px;
+  text-align: left;
+  color: #AAB0BC; 
+  display: inline-block; 
+  margin-left: 46px;  
+}
+/*==========================================================     Section case Study End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section About Us Start   =====================================================================*/ 
+.section-aboutus .about-us{
+  width: 1290px;
+  margin: 200px auto 0px;
+  
+}
+
+
+/* Block one Image */
+.section-aboutus .about-us .block-one{
+  display: flex;
+  column-gap: 70px;
+}
+
+.section-aboutus .about-us .block-one .about-us-img .img-box{
+  display: flex;
+  column-gap: 25px;
+}
+
+.section-aboutus .about-us .block-one .about-us-img .second-image{
+  width: 292.5px;
+  height: 234.59px;
+  margin-top: 25px;
+}
+
+.section-aboutus .about-us .block-one .about-us-img .third-image{
+  margin: 25px 0px 0px 25px;
+}
+
+
+/* Block one Details */
+.section-aboutus .about-us .block-one .about-us-details{
+  width: 680px;
+  height: 460.61px;
+  margin-top: 55px;
+}
+
+
+
+.section-aboutus .about-us .block-one .about-us-details .heading .title{
+  width: 110.39px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  color: #F857A6;
+  margin: 0 0;
+}
+
+.section-aboutus .about-us .block-one .about-us-details .heading .sub-title{
+  width: 498.73px;
+  height: 93.5px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 47.5px;
+  text-align: left;
+  margin: 16px 0px 0px 0px;
+}
+
+.section-aboutus .about-us .block-one .about-us-details .heading .details{
+  width: 604.65px;
+  height: 135.56px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  margin: 25px 0px 0px 0px;
+}
+
+
+
+
+.section-aboutus .about-us .block-one .about-us-details .check-list{
+  margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.section-aboutus .about-us .block-one .about-us-details .check-list .point{
+  display: flex;
+  column-gap: 10px;
+} 
+
+
+.section-aboutus .about-us .block-one .about-us-details .check-list .point .point-image{
+    width: 20.2px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+
+.section-aboutus .about-us .block-one .about-us-details .check-list .point .point-text{
+  width: 250.33px;
+  height: 48.89px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin: 0px 0px 15px 10px;
+}
+
+
+
+
+/* Block Two */
+.section-aboutus .about-us .block-two .about-us-goals-list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+
+.section-aboutus .about-us .block-two .about-us-goals-list .goals-cart{
+  display: flex;
+  column-gap: 20px;
+}
+
+.section-aboutus .about-us .block-two .about-us-goals-list .goals-cart .image-box .number-image{
+  width: 44px;
+  height: 44px; 
+}
+
+
+.section-aboutus .about-us .block-two .about-us-goals-list .goals-cart .goals-heading .title{
+  width: 106.86px;
+  height: 29px;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: left;
+  color: #343F52;
+  margin-top: 10px;
+}
+
+.section-aboutus .about-us .block-two .about-us-goals-list .goals-cart .goals-heading .description{
+  width: 316.93px;
+  height: 77.79px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  margin: 14px 0px 0px 0px;
+}
+
+/*==========================================================     Section About Us End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section Contac us Start   =====================================================================*/ 
+.section-contactUs .contact-us{
+  width: 1320px;
+  height: 490px;
+  margin: 155px auto 0px;
+  display: flex;
+  column-gap: 116px;
+}
+
+/* Block Left */
+.section-contactUs .contact-us .block-left .contac-us-feature-image{
+  width: 637.5px;
+  height: 490.08px;
+}
+
+
+/* Block Right */
+/* heading */
+.section-contactUs .contact-us .block-right .heading .title{
+  width: 103.3px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  color: #F857A6;
+  margin-top: 51px;
+}
+
+.section-contactUs .contact-us .block-right .heading .sub-title{
+  width: 426.43px;
+  height: 93.5px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 47.5px;
+  text-align: left;
+  margin: 16.6px 0px 0px 0px;
+}
+
+
+/* Contac Info */
+.section-contactUs .contact-us .block-right .contact-info{
+  margin-top: 41px;
+}
+
+
+.section-contactUs .contact-us .block-right .contact-info .contact-site{
+  display: flex;
+  column-gap: 20px;
+  margin: 24.89px 0px 0px 0px;
+}
+
+
+.section-contactUs .contact-us .block-right .contact-info .contact-site .contact-site-image .site-image{
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.section-contactUs .contact-us .block-right .contact-info .contact-site .contact-address .contact-mediam{
+  width: 70.23px;
+  height: 28.5px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 28.5px;
+  text-align: left;
+  margin: 0 0;
+}
+
+.section-contactUs .contact-us .block-right .contact-info .contact-site .contact-address .contact-mediam-details{
+  width: 288.72px;
+  height: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin: 4px 0px 0px 0px;
+}
+/*==========================================================     Section Contac us End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section Community start   =====================================================================*/ 
+.section-community .join-community{
+  width: 1470px;
+  height: 409.48px;
+  border-radius: 16px;
+  margin: 160px auto 0px;
+  background-image: linear-gradient(to right, #E4F1FE, #FCD5F5);
+}
+
+
+.section-community .join-community .title{
+  width: 179.53px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: center;
+  color:  #F857A6 ;
+  margin: 0 auto;
+  padding-top: 95px;
+}
+
+.section-community .join-community .sub-title{
+  width: 671.31px;
+  height: 93.5px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 47.5px;
+  text-align: center;
+  margin: 30px auto 0px;
+}
+
+
+
+/* Button */
+.section-community .join-community .join-us-btn{
+  width: 147px;
+  height: 58px;
+  font-size: 17px;
+  font-weight: 600px;
+  line-height: 28px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #F857A6;
+  margin-top: 37px;
+  margin-left: 660px;
+}
+
+
+.section-community .join-community .join-us-btn{
+  transition: all 300ms ease-out 0s;
+}
+
+.section-community .join-community .join-us-btn:hover{
+  transform: scale(1.1);
+  background-color: #191720;
+}
+/*==========================================================     Section Community End   =====================================================================*/ 
+
+
+
+
+
+
+
+
+
+/*==========================================================    Footer Section Start    =====================================================================*/
+.section-footer .footer-box{
+  width: 1470px;
+  height: 409.48px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 180px;
+  padding: 90px 0px 0px 90px;
+}
+
+
+/* Logo */
+.section-footer .footer-box .logo a .footer-logo{
+  width: 75px;
+  height: 47px;
+}
+
+.section-footer .footer-box .logo .licence {
+  width: 139.47px;
+  height: 48.89px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin-top: 24px;
+}
+
+
+
+
+/* Get Touch */
+.section-footer .footer-box .get-touch .title{
+  width: 136.78px;
+  height: 29px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: left;
+  color: #343F52;
+  margin: 0 0;
+}
+
+.section-footer .footer-box .get-touch .adress{
+  width: 149.95px;
+  height: 77.78px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin: 19px 0px 0px 0px;
+}
+
+.section-footer .footer-box .get-touch .email-id{
+  width: 136.26px;
+  height: 48.89px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  margin-top: 28px;
+  color: #60697B;
+  margin: 28.89px 0px 0px 0px;
+}
+
+
+
+
+
+/* Manue */
+.section-footer .footer-box .manue-link .title{
+  width: 136.78px;
+  height: 29px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: left;
+  color: #343F52;
+  margin: 0 0;
+}
+
+.section-footer .footer-box .manue-link ul{
+  padding-left: 0px;
+  margin-top: 19px;
+}
+
+.section-footer .footer-box .manue-link li{
+  list-style: none;
+  margin-top: 5px;
+}
+
+.section-footer .footer-box .manue-link a{
+  width: 110.66px;
+  height: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  text-decoration: none;
+}
+
+.section-footer .footer-box .manue-link a:hover {
+  color: #FF5331;
+}
+
+
+
+
+/* News */
+.section-footer .footer-box .news .title{
+  width: 136.78px;
+  height: 29px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: left;
+  color: #343F52;
+  margin: 0 0;
+}
+
+.section-footer .footer-box .news .sub-title{
+  width: 287px;
+  height: 48.89px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+  text-align: left;
+  color: #60697B;
+  margin: 19px 0px 0px 0px;
+}
+
+
+
+
+
+/* Email Adress */
+.section-footer .footer-box .news .email-box{
+  width: 350px;
+  margin: 29.89px 0px 0px 0px;
+}
+
+
+.section-footer .footer-box .news .email-box .mail{
+  width: 220px;
+  height: 50px;
+  border: 1px solid #083C8212;
+  border-radius: 8px 0px 0px 8px;
+  padding: 16px 105px 16px 21px;
+  font-size: 15px;
+}
+
+.section-footer .footer-box .news .email-box .mail::placeholder{
+  width: 94.26px;
+  height: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25.5px;
+  text-align: left;
+  color: #959CA9;
+}
+
+
+
+.section-footer .footer-box .news .email-box .mail:focus {
+  outline: none;
+}
+
+
+/* Button */
+.section-footer .footer-box .news .email-box .join-btn{
+  width: 78.03px;
+  height: 50px;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: none;
+  padding: 11px 23px 16px 24px;
+  background-color: #F857A6;
+  border-radius: 0px 8px 8px 0px;
+  transition: background-color 300ms ease-out 0s;
+}
+
+
+.section-footer .footer-box .news .email-box .join-btn:hover {
+  background-color: #191720;
+}
+
+/*==========================================================    Footer Section End    =====================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
