@@ -1,0 +1,125 @@
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+
+
+
+
+
+
+
+
+
+
+
+/*==========================================================     Section Control Design Start   =====================================================================*/
+/*Inner-One*/
+.section-control .inner{
+width: 425px;
+height: 900px;
+margin: 15px auto 0px;
+flex-wrap: wrap;
+}
+
+
+/*Block-Left*/
+.section-control .inner .block-left{
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+}
+.section-control .inner .block-left .control-main-image{
+width: 100%;
+}
+
+
+
+
+/*Block-Right*/
+.section-control .inner .block-right{
+width: 100%;
+flex-grow: 0;
+flex-shrink: 0;
+margin-top: 90px;
+}
+
+
+.section-control .inner .block-right .control-heading .title{
+width: 280px;
+height: 19px;
+font-size: 14px;
+font-weight: 600;
+line-height: 21.6px;
+letter-spacing: 0.4000000059604645px;
+text-align: center;
+color: #F857A6;
+}
+
+.section-control .inner .block-right .control-heading .sub-title{
+width: 280px;
+height: 50px;
+font-size: 22px;
+font-weight: 600;
+line-height: 25px;
+text-align: center;
+color: #343F52;
+margin-top: 16.59px;
+}
+
+.section-control .inner .block-right .control-heading .description{
+width: 280px;
+height: 135px;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+text-align: center;
+color: #60697B;
+margin-top: 25.5px;
+}
+
+
+
+
+.section-control .inner .block-right .control-list{
+width: 280px;
+height: 250px; 
+display: flex;
+flex-wrap: wrap;
+column-gap: 5px;
+row-gap: 0px;
+margin-top: 50px;
+}
+
+
+.section-control .inner .block-right .control-list .point{
+width: 130px;
+height: 50px;
+display: flex;
+column-gap: 10px;
+} 
+
+
+
+.section-control .inner .block-right .control-list .point .point-image{
+width: 20.2px;
+height: 20px; 
+margin-top: 5px;
+}
+
+
+.section-control .inner .block-right .control-list .point .point-text{
+width: 100px;
+font-size: 12px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+color: #60697B;
+margin: 1px 0px 0px 0px;
+}
+
+
+}
+
+
+    
